@@ -40,3 +40,34 @@ html {
   font-family: "Be Vietnam Pro", serif;
   font-size: 16px;
 }
+
+/* Layout */
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  grid-template-areas:
+    "logo   connect"
+    "text   picture";
+
+  width: 100%;
+}
+.logo {
+  grid-area: logo;
+}
+.connect-button {
+  grid-area: connect;
+}
+.hero__text {
+  grid-area: text;
+}
+.hero__picture {
+  grid-area: picture;
+}
+
+/* MODULES */
+picture,
+img {
+  display: block;
+  overflow: hidden;
+}
