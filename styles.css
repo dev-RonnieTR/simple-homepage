@@ -51,6 +51,7 @@ html {
     "text   picture";
 
   width: 100%;
+  height: 100vh;
 }
 .logo {
   grid-area: logo;
