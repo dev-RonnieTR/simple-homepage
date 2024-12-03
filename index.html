@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Begin your digital art journey with EchoPlex"
+    />
+    <title>EchoPlex | Home</title>
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section class="hero">
+      <img class="logo" src="resources/logo/logo.svg" alt="EchoPlex logo" />
+      <button class="connect-button">Connect</button>
+      <div class="hero__text">
+        <h1 class="title hero__text__heading hero__text__item">
+          EchoPlex is the first community-owned digital art gallery.
+        </h1>
+        <p class="hero__text__description hero__text__item">
+          Empowering Artists and Connecting Communities Through Digital Art
+        </p>
+        <button class="create-button hero__text__button hero__text__item">
+          Create
+        </button>
+        <button class="explore-button hero__text__button hero__text__item">
+          Explore
+        </button>
+      </div>
+      <picture class="hero__picture">
+        <source
+          srcset="
+            resources/hero/hero_image@0.5x.avif  275w,
+            resources/hero/hero_image.avif       550w,
+            resources/hero/hero_image@2x.avif   1100w
+          "
+          type="image/avif"
+        />
+        <source
+          srcset="
+            resources/hero/hero_image@0.5x.webp  275w,
+            resources/hero/hero_image.webp       550w,
+            resources/hero/hero_image@2x.webp   1100w
+          "
+          type="image/webp"
+        />
+        <source
+          srcset="
+            resources/hero/hero_image@0.5x.png  275w,
+            resources/hero/hero_image.png       550w,
+            resources/hero/hero_image@2x.png   1100w
+          "
+          type="image/png"
+        />
+        <img
+          class="hero__img"
+          src="resources/hero/hero_image@0.5x.png"
+          alt="Examples of art made by our artists"
+        />
+      </picture>
+    </section>
+    <section class="join">
+      <h2 class="title join__title join__item">
+        Join 30,000+ creators and collections
+      </h2>
+      <div class="features join__item">
+        <div class="feature">
+          <p class="emoji">👾</p>
+          <h3 class="title feature__title">Immersive Digital Art Experience</h3>
+        </div>
+        <div class="feature">
+          <p class="emoji">⚙️</p>
+          <h3 class="title feature__title">Customizable Flooring</h3>
+        </div>
+        <div class="feature">
+          <p class="emoji">🎭</p>
+          <h3 class="title feature__title">State-of-the-Art Displays</h3>
+        </div>
+        <div class="feature">
+          <p class="emoji">🎓</p>
+          <h3 class="title feature__title">Expertly Designed Lighting and Sound</h3>
+        </div>
+        <div class="feature">
+          <p class="emoji">👨🏻‍💻</p>
+          <h3 class="title feature__title">Community Engagement</h3>
+        </div>
+        <div class="feature">
+          <p class="emoji">👩‍🎨</p>
+          <h3 class="title feature__title">Artist Collaborations</h3>
+        </div>
+        <div class="feature">
+          <p class="emoji">📚</p>
+          <h3 class="title feature__title">Educational Programs</h3>
+        </div>
+        <div class="feature">
+          <p class="emoji">🤖</p>
+          <h3 class="title feature__title">Technology Integration</h3>
+        </div>
+      </div>
+    </section>
+    <section class="begin">
+      <h2 class="title begin__title begin__item">
+        Begin you digital art journey with EchoPlex
+      </h2>
+      <button class="create-button begin__button begin__item">Create</button>
+      <footer>
+        <p class="footer__item">© EchoPlex Oy. All rights reserved.</p>
+        <p class="footer__item">Term</p>
+        <p class="footer__item">Privacy Policy</p>
+      </footer>
+    </section>
+  </body>
+</html>

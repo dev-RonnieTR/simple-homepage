@@ -1,0 +1,42 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --font-size-regular: 1rem;
+  --font-size-medium: 1.25rem;
+  --font-size-large: 2rem;
+  --font-size-extralarge: 2.25rem;
+  --font-weight-regular: 400;
+  --font-weight-bold: 700;
+  --color-1: #121826;
+  --color-2: #4138c2;
+  --color-3: #9da3ae;
+  --color-4: #c9d2fa;
+  --color-5: #e14f62;
+  --color-6: #e2b53e;
+  --color-7: #ffffff;
+  --color-8: #4e80ee;
+  --color-9: #52b3d0;
+  --color-10: #5ec269;
+  --color-11: #9d59ef;
+  --color-12: #c951e7;
+  --color-13: #d5faf1;
+  --color-14: #dee9fc;
+  --color-15: #e2fbe8;
+  --color-16: #e5e7eb;
+  --color-17: #e87b35;
+  --color-18: #f1e8fd;
+  --color-19: #fbe5e6;
+  --color-20: #fceed8;
+  --color-21: #fdf9c9;
+}
+
+html {
+  font-family: "Be Vietnam Pro", serif;
+  font-size: 16px;
+}
