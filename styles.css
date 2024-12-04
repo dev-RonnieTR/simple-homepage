@@ -36,6 +36,8 @@
   --color-21: #fdf9c9;
   --button-height: 3rem;
   --hero-img-width: 34.375rem;
+  --begin-background-width: 64rem;
+  --begin-background-height: 33.8125rem
 }
 
 html {
@@ -115,8 +117,29 @@ html {
   margin: 1em auto 0;
 }
 
+/* Begin Section Layout */
+.begin {
+  position: relative;
+}
+.begin-background {
+  width: 100%;
+  height: var(--begin-background-height);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -10;
+}
+.begin-background__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.begin__text {
+
+}
+
 /* MODULES */
-img {
+picture, img {
   display: block;
 }
 
