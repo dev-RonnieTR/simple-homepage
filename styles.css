@@ -34,6 +34,8 @@
   --color-19: #fbe5e6;
   --color-20: #fceed8;
   --color-21: #fdf9c9;
+  --button-height: 3rem;
+  --hero-img-width: 34.375rem;
 }
 
 html {
@@ -44,20 +46,25 @@ html {
 /* Layout */
 .hero {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto auto;
+  grid-template-columns: 1fr var(--hero-img-width);
+  grid-template-rows: var(--button-height) auto;
   grid-template-areas:
     "logo   connect"
     "text   picture";
+  align-items: center;
+  gap: 3rem;
 
-  width: 100%;
-  height: 100vh;
+  width: 90%;
+  min-height: 100vh;
+  margin: 1rem auto;
 }
+
 .logo {
   grid-area: logo;
 }
 .connect-button {
   grid-area: connect;
+  justify-self: end;
 }
 .hero__text {
   grid-area: text;
@@ -65,20 +72,47 @@ html {
 .hero__picture {
   grid-area: picture;
 }
+.connect-button,
+.hero__picture {
+  justify-self: end;
+}
+.hero__text, .hero__picture {
+  justify-self: center;
+}
+.hero__img {
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+}
 
 /* MODULES */
-picture,
 img {
-  display: block;
-  overflow: hidden;
+  display: block
 }
 
 button {
-    border-radius: 10rem;
-    outline: none;
-    border: 2px solid var(--color-16);
-    background-color: var(--color-7);
-    width: 8rem;
-    height: 3rem;
-    font-size: var(--font-size-regular)
+  border-radius: 10rem;
+  outline: none;
+  border: 2px solid var(--color-16);
+  background-color: var(--color-7);
+  width: 8rem;
+  height: var(--button-height);
+  font-size: var(--font-size-regular);
+}
+
+/* TYPOGRAPHY */
+.title, button {
+  font-weight: var(--font-weight-bold);
+}
+.hero__text__heading {
+  font-size: var(--font-size-extralarge);
+}
+.join__title {
+  font-size: var(--font-size-large);
+}
+.feature__title {
+  font-size: var(--font-size-medium);
+}
+button, .hero__text__description {
+  font-size: var(--font-size-regular);
 }
