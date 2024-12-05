@@ -154,7 +154,7 @@ html {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 25rem;
+  width: min(100%, 25em);
 
   display: flex;
   flex-direction: column;
@@ -228,6 +228,7 @@ button,
 .copyright {
   color: var(--color-3);
   font-weight: var(--font-weight-regular);
+  text-align: center;
 }
 
 @media (max-width: 1024px){
@@ -245,10 +246,46 @@ button,
     height: auto;
     margin: auto;
   }
+  .hero__text__buttons {
+    justify-content: center;
+    margin-bottom: 8rem;
+  }
 
   .features {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(4, auto);
-    gap: 4rem 0;
+    gap: 2rem 0;
+  }
+}
+
+@media (max-width: 480px) {
+  html {
+    font-size: clamp(14px, 3.333vw, 16px);
+  }
+
+  :root {
+    --font-size-extralarge: 2rem;
+    --font-size-large: 1.75rem;
+  }
+  
+  .hero__text__buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .features {
+    grid-template-columns: 100%;
+    grid-auto-rows: auto;
+    gap: 2rem 0;
+  }
+
+  footer {
+    bottom: -10%;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+    width: 100%;
+    padding: 1.5em 5%;
+    background-color: #121826;
   }
 }
