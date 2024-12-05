@@ -136,6 +136,12 @@ html {
   height: 100%;
   object-fit: cover;
 }
+.begin__text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 
 /* MODULES */
 picture, img {
