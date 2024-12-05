@@ -228,3 +228,21 @@ button,
   color: var(--color-3);
   font-weight: var(--font-weight-regular);
 }
+
+@media (max-width: 1024px){
+  .hero {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: calc(var(--button-height) + 1rem) auto auto;
+    grid-template-areas:
+      "logo     connect"
+      "picture  picture"
+      "text     text";
+  
+  }
+  .hero__img {
+    width: min(var(--hero-img-width), 100%);
+    height: auto;
+    margin: auto;
+  }
+
+}
