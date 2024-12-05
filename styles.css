@@ -123,6 +123,7 @@ html {
   position: relative;
   width: 100%;
   height: var(--begin-background-height);
+  margin-top: 10rem;
 }
 .begin-background {
   width: 100%;
