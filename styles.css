@@ -212,6 +212,7 @@ button {
   width: 8rem;
   height: var(--button-height);
   font-size: var(--font-size-regular);
+  color: var(--color-2);
 }
 .create-button {
   background-color: var(--color-2);
