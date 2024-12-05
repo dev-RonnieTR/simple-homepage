@@ -37,7 +37,7 @@
   --button-height: 3rem;
   --hero-img-width: 34.375rem;
   --begin-background-width: 64rem;
-  --begin-background-height: 33.8125rem
+  --begin-background-height: 33.8125rem;
 }
 
 html {
@@ -78,7 +78,8 @@ html {
 .hero__picture {
   justify-self: end;
 }
-.hero__text, .hero__picture {
+.hero__text,
+.hero__picture {
   justify-self: center;
 }
 .hero__img {
@@ -142,9 +143,20 @@ html {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+footer {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  gap: 2em;
+  
+  width: 100%;
+  padding: 1.5em 5%;
+  background-color: #121826;
+}
 
 /* MODULES */
-picture, img {
+picture,
+img {
   display: block;
 }
 
@@ -159,7 +171,8 @@ button {
 }
 
 /* TYPOGRAPHY */
-.title, button {
+.title,
+button {
   font-weight: var(--font-weight-bold);
 }
 .hero__text__heading {
@@ -173,9 +186,19 @@ button {
   font-size: var(--font-size-medium);
   text-align: center;
 }
-button, .hero__text__description {
+button,
+.hero__text__description {
   font-size: var(--font-size-regular);
 }
 .emoji {
   font-size: var(--font-size-large);
+}
+.footer__item {
+  color: var(--color-7);
+  font-size: var(--font-size-regular);
+  font-weight: var(--font-weight-bold);
+}
+.copyright {
+  color: var(--color-3);
+  font-weight: var(--font-weight-regular);
 }
