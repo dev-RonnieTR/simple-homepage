@@ -176,6 +176,11 @@ button {
   height: var(--button-height);
   font-size: var(--font-size-regular);
 }
+.create-button {
+  background-color: var(--color-2);
+  color: var(--color-7);
+  border: 2px solid var(--color-2);
+}
 
 /* TYPOGRAPHY */
 .title,
