@@ -50,11 +50,10 @@ html {
 .hero {
   display: grid;
   grid-template-columns: 1fr var(--hero-img-width);
-  grid-template-rows: var(--button-height) auto;
+  grid-template-rows: calc(var(--button-height) + 1rem) auto;
   grid-template-areas:
     "logo   connect"
     "text   picture";
-  align-items: center;
   gap: 3rem;
 
   width: var(--section-width);
@@ -64,13 +63,16 @@ html {
 
 .logo {
   grid-area: logo;
+  align-self: end;
 }
 .connect-button {
   grid-area: connect;
   justify-self: end;
+  align-self: end;
 }
 .hero__text {
   grid-area: text;
+  align-self: center;
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -81,6 +83,7 @@ html {
 }
 .hero__picture {
   grid-area: picture;
+  align-self: center;
 }
 .connect-button,
 .hero__picture {
