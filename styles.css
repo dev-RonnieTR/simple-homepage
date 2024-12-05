@@ -231,6 +231,12 @@ button,
   text-align: center;
 }
 
+@media (min-width: 1281px) {
+  html {
+    font-size: clamp(16px, 1.25vw, 20px);
+  }
+}
+
 @media (max-width: 1024px){
   .hero {
     grid-template-columns: 1fr 1fr;
