@@ -71,6 +71,13 @@ html {
 }
 .hero__text {
   grid-area: text;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.hero__text__buttons {
+  display: flex;
+  gap: 1rem;
 }
 .hero__picture {
   grid-area: picture;

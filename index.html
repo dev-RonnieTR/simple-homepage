@@ -29,12 +29,14 @@
         <p class="hero__text__description hero__text__item">
           Empowering Artists and Connecting Communities Through Digital Art
         </p>
-        <button class="create-button hero__text__button hero__text__item">
-          Create
-        </button>
-        <button class="explore-button hero__text__button hero__text__item">
-          Explore
-        </button>
+        <div class="hero__text__buttons">
+          <button class="create-button hero__text__button hero__text__item">
+            Create
+          </button>
+          <button class="explore-button hero__text__button hero__text__item">
+            Explore
+          </button>
+        </div>
       </div>
       <picture class="hero__picture">
         <source
@@ -87,7 +89,9 @@
         </div>
         <div class="feature">
           <p class="emoji">🎓</p>
-          <h3 class="title feature__title">Expertly Designed Lighting and Sound</h3>
+          <h3 class="title feature__title">
+            Expertly Designed Lighting and Sound
+          </h3>
         </div>
         <div class="feature">
           <p class="emoji">👨🏻‍💻</p>
@@ -109,10 +113,32 @@
     </section>
     <section class="begin">
       <picture class="begin-background">
-        <source srcset="resources/background/footer_background_image.avif 512w, resources/background/footer_background_image@2x.avif 1024w" type="image/avif">
-        <source srcset="resources/background/footer_background_image.webp 512w, resources/background/footer_background_image@2x.webp 1024w" type="image/webp">
-        <source srcset="resources/background/footer_background_image.png 512w, resources/background/footer_background_image@2x.png 1024w" type="image/png">
-        <img class="begin-background__img" src="resources/background/footer_background_image.png" alt="">
+        <source
+          srcset="
+            resources/background/footer_background_image.avif     512w,
+            resources/background/footer_background_image@2x.avif 1024w
+          "
+          type="image/avif"
+        />
+        <source
+          srcset="
+            resources/background/footer_background_image.webp     512w,
+            resources/background/footer_background_image@2x.webp 1024w
+          "
+          type="image/webp"
+        />
+        <source
+          srcset="
+            resources/background/footer_background_image.png     512w,
+            resources/background/footer_background_image@2x.png 1024w
+          "
+          type="image/png"
+        />
+        <img
+          class="begin-background__img"
+          src="resources/background/footer_background_image.png"
+          alt=""
+        />
       </picture>
       <div class="begin__text">
         <h2 class="title begin__title begin__item">
@@ -120,11 +146,13 @@
         </h2>
         <button class="create-button begin__button begin__item">Create</button>
       </div>
-        <footer>
-          <p class="footer__item copyright">© EchoPlex Oy. All rights reserved.</p>
-          <p class="footer__item">Term</p>
-          <p class="footer__item">Privacy Policy</p>
-        </footer>
+      <footer>
+        <p class="footer__item copyright">
+          © EchoPlex Oy. All rights reserved.
+        </p>
+        <p class="footer__item">Term</p>
+        <p class="footer__item">Privacy Policy</p>
+      </footer>
     </section>
   </body>
 </html>
