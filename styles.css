@@ -38,6 +38,7 @@
   --hero-img-width: 34.375rem;
   --begin-background-width: 64rem;
   --begin-background-height: 33.8125rem;
+  --section-width: 90%;
 }
 
 html {
@@ -56,9 +57,9 @@ html {
   align-items: center;
   gap: 3rem;
 
-  width: 90%;
+  width: var(--section-width);
   min-height: 100vh;
-  margin: 1rem auto;
+  margin: auto;
 }
 
 .logo {
@@ -83,18 +84,17 @@ html {
   justify-self: center;
 }
 .hero__img {
-  object-fit: cover;
   width: 100%;
   height: auto;
 }
 
 /*Join Section Layout*/
 .join {
-  width: 90%;
+  width: var(--section-width);
   margin: auto;
 }
 .join__title {
-  width: 25rem;
+  width: 25em;
   margin: 0 auto 2em;
 }
 .features {
