@@ -143,13 +143,19 @@ html {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  width: 25rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
 }
 footer {
   position: absolute;
   bottom: 0;
   display: flex;
   gap: 2em;
-  
+
   width: 100%;
   padding: 1.5em 5%;
   background-color: #121826;
@@ -179,9 +185,13 @@ button {
 .hero__text__heading {
   font-size: var(--font-size-extralarge);
 }
-.join__title {
+.join__title,
+.begin__title {
   font-size: var(--font-size-large);
   text-align: center;
+}
+.begin__title {
+  color: var(--color-7);
 }
 .feature__title {
   font-size: var(--font-size-medium);
